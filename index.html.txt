@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreeam Wedding Style - Elegant Wedding Products</title>
+    <meta name="description" content="Discover elegant wedding products for your special day. Shop dresses, decorations, accessories and more at Dreeam Wedding Style.">
+    
+    <!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="your-pinterest-verification-code"/>
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Dreeam Wedding Style - Elegant Wedding Products">
+    <meta property="og:description" content="Discover elegant wedding products for your special day">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Pinterest Save Button -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    
+    <style>
+        :root {
+            --blush-pink: #f8e5e5;
+            --soft-pink: #f4d2d7;
+            --dusty-pink: #e8b4b8;
+            --ivory: #fffef7;
+            --soft-ivory: #fcf9f4;
+            --gold: #d4af37;
+            --rose-gold: #e8b4b8;
+            --charcoal: #4a4a4a;
+            --light-gray: #f9f9f9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, var(--soft-ivory) 0%, var(--ivory) 100%);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--dusty-pink);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--dusty-pink), var(--gold));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="%23e8b4b8" opacity="0.3"/><circle cx="50" cy="50" r="1" fill="%23d4af37" opacity="0.3"/><circle cx="80" cy="80" r="1" fill="%23e8b4b8" opacity="0.3"/></svg>');
+            animation: float 20s infinite linear;
+            pointer-events: none;
+        }
+        
+        @keyframes float {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-100px) translateY(-100px); }
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            color: white;
+            padding: 0.875rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(232, 180, 184, 0.3);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--gold), var(--dusty-pink));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(232, 180, 184, 0.4);
+        }
+        
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(45deg, #ffffff, #f8f8f8);
+            color: var(--dusty-pink);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(232, 180, 184, 0.3);
+            font-weight: 500;
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(45deg, var(--soft-pink), var(--blush-pink));
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(232, 180, 184, 0.3);
+        }
+        
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+            padding: 2rem 0;
+        }
+        
+        .product-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.05));
+            pointer-events: none;
+        }
+        
+        .pinterest-save {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(0.9);
+            z-index: 2;
+        }
+        
+        .product-card:hover .pinterest-save {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .pinterest-save:hover {
+            transform: scale(1.1);
+            background: white;
+        }
+        
+        .product-info {
+            padding: 1.75rem;
+        }
+        
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--charcoal);
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .shop-btn {
+            width: 100%;
+            padding: 0.875rem;
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .shop-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--gold), var(--dusty-pink));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .shop-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(232, 180, 184, 0.4);
+        }
+        
+        .shop-btn:hover::before {
+            opacity: 1;
+        }
+        
+        /* Category Filter */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin: 2.5rem 0;
+            padding: 0;
+        }
+        
+        .filter-btn {
+            padding: 0.625rem 1.25rem;
+            border: 1px solid rgba(232, 180, 184, 0.4);
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: var(--charcoal);
+            backdrop-filter: blur(4px);
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(232, 180, 184, 0.3);
+        }
+        
+        /* Featured Slider */
+        .featured-slider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin: 2.5rem 0;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slider-item {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .slider-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+        }
+        
+        .slider-btn {
+            background: rgba(255, 255, 255, 0.85);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            color: var(--dusty-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slider-btn:hover {
+            background: white;
+            transform: scale(1.1);
+            color: var(--gold);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--dusty-pink), var(--gold));
+            border-radius: 2px;
+        }
+        
+        /* Inspiration Grid */
+        .inspiration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .inspiration-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        
+        .inspiration-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .inspiration-item img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .inspiration-item:hover img {
+            transform: scale(1.03);
+        }
+        
+        .inspiration-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 2.5rem 1.5rem 1.5rem;
+            color: white;
+            transform: translateY(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .inspiration-item:hover .inspiration-overlay {
+            transform: translateY(-5px);
+        }
+        
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, var(--blush-pink), var(--soft-pink));
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M40,40 C80,20 120,20 160,40 C180,80 180,120 160,160 C120,180 80,180 40,160 C20,120 20,80 40,40 Z" fill="none" stroke="%23d4af37" stroke-width="0.5" stroke-opacity="0.1"/></svg>');
+            pointer-events: none;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #4a4a4a, #3a3a3a);
+            color: white;
+            padding: 3rem 0 1rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--dusty-pink), var(--gold));
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        
+        .social-link:hover {
+            background: linear-gradient(45deg, var(--dusty-pink), var(--gold));
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--charcoal);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.25rem;
+            }
+        }
+        
+        /* Loading Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Particle Effect */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: particle-float 15s infinite linear;
+        }
+        
+        @keyframes particle-float {
+            0% { transform: translateY(0) translateX(0); opacity: 0; }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--dusty-pink), var(--gold));
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--gold), var(--dusty-pink));
+        }
+        
+        /* Floating hearts effect */
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        
+        .heart {
+            position: absolute;
+            color: var(--dusty-pink);
+            font-size: 20px;
+            animation: float-up 8s infinite;
+            opacity: 0;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.1));
+        }
+        
+        @keyframes float-up {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="w-full">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-playfair font-bold text-rose-400">💒 Dreeam Wedding Style</h1>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-links hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-rose-400">Home</a>
+                    <a href="#shop" class="nav-link text-gray-700 hover:text-rose-400">Shop</a>
+                    <a href="#trending" class="nav-link text-gray-700 hover:text-rose-400">Trending</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-rose-400">About</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-rose-400">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="nav-links md:hidden" id="mobileMenu">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-rose-400">Home</a>
+                <a href="#shop" class="block py-2 text-gray-700 hover:text-rose-400">Shop</a>
+                <a href="#trending" class="block py-2 text-gray-700 hover:text-rose-400">Trending</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-rose-400">About</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-rose-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container mx-auto px-4">
+            <div class="hero-content fade-in">
+                <h1 class="font-playfair mb-4">Your Dream Wedding Starts Here</h1>
+                <p class="text-xl mb-8">Discover elegant wedding products curated for your special day</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#shop" class="btn-primary">Shop Wedding Collection</a>
+                    <a href="#trending" class="btn-secondary">Get Inspired</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Slider -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title font-playfair">Featured Wedding Collections</h2>
+            <div class="featured-slider">
+                <div class="slider-container" id="featuredSlider">
+                    <div class="slider-item">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Luxury Wedding Dresses">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <h3 class="text-3xl font-playfair text-white mb-2">Luxury Wedding Dresses</h3>
+                            <p class="text-white/90 mb-4">Elegant designs for your special day</p>
+                            <a href="#shop" class="btn-primary">Shop Dresses</a>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Wedding Decorations">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <h3 class="text-3xl font-playfair text-white mb-2">Dreamy Wedding Decor</h3>
+                            <p class="text-white/90 mb-4">Transform your venue into a fairy tale</p>
+                            <a href="#shop" class="btn-primary">Shop Decor</a>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Bridal Accessories">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <h3 class="text-3xl font-playfair text-white mb-2">Bridal Accessories</h3>
+                            <p class="text-white/90 mb-4">Complete your wedding look</p>
+                            <a href="#shop" class="btn-primary">Shop Accessories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" onclick="moveSlider(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn" onclick="moveSlider(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title font-playfair">Shop Wedding Collections</h2>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('bride')">👰 Bride Essentials</button>
+                <button class="filter-btn" onclick="filterProducts('groom')">🤵 Groom & Party</button>
+                <button class="filter-btn" onclick="filterProducts('decor')">💍 Wedding Decorations</button>
+                <button class="filter-btn" onclick="filterProducts('ceremony')">🎉 Ceremony & Reception</button>
+                <button class="filter-btn" onclick="filterProducts('favors')">🎁 Wedding Favors</button>
+                <button class="filter-btn" onclick="filterProducts('photo')">📸 Photo & Memory</button>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary" onclick="loadMoreProducts()">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section id="trending" class="section bg-gradient-to-br from-pink-50 to-rose-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title font-playfair">🔥 Trending on Pinterest</h2>
+            <p class="text-center text-gray-600 mb-8">Pinterest-loved wedding ideas and inspiration</p>
+            
+            <div class="inspiration-grid">
+                <div class="inspiration-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Boho Wedding">
+                    <div class="inspiration-overlay">
+                        <h3 class="text-xl font-playfair mb-2">Boho Wedding Style</h3>
+                        <p>Free-spirited and romantic</p>
+                        <div class="pinterest-save">
+                            <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-description="Boho Wedding Style Inspiration">
+                                <i class="fab fa-pinterest text-rose-400 text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inspiration-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Minimalist Wedding">
+                    <div class="inspiration-overlay">
+                        <h3 class="text-xl font-playfair mb-2">Minimalist Wedding</h3>
+                        <p>Clean and elegant simplicity</p>
+                        <div class="pinterest-save">
+                            <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-description="Minimalist Wedding Inspiration">
+                                <i class="fab fa-pinterest text-rose-400 text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inspiration-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Luxury Gold Wedding">
+                    <div class="inspiration-overlay">
+                        <h3 class="text-xl font-playfair mb-2">Luxury Gold Wedding</h3>
+                        <p>Opulent and grand</p>
+                        <div class="pinterest-save">
+                            <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-description="Luxury Gold Wedding Theme">
+                                <i class="fab fa-pinterest text-rose-400 text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.pinterest.com/yourprofile" target="_blank" class="btn-primary">
+                    <i class="fab fa-pinterest"></i> Follow Us on Pinterest
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="section-title font-playfair text-white mb-8">About Dreeam Wedding Style</h2>
+                <p class="text-lg text-white/90 mb-6">
+                    Welcome to Dreeam Wedding Style, your premier destination for elegant wedding products that make your special day truly unforgettable.
+                </p>
+                <p class="text-white/90 mb-6">
+                    We curate the finest wedding items from trusted suppliers, bringing you everything from stunning bridal accessories to dreamy decorations that transform your venue into a fairy tale setting.
+                </p>
+                <p class="text-white/90 mb-8">
+                    Our mission is to help you create the wedding of your dreams without breaking the bank. Every product is carefully selected for its quality, style, and ability to make your special day perfect.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-yellow-300">10,000+</div>
+                        <div class="text-white/80">Happy Couples</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-yellow-300">500+</div>
+                        <div class="text-white/80">Wedding Products</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-yellow-300">50+</div>
+                        <div class="text-white/80">Partner Brands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title font-playfair">Connect With Us</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">
+                    Follow us on social media for daily wedding inspiration, exclusive offers, and behind-the-scenes content!
+                </p>
+                <div class="social-links mb-8">
+                    <a href="https://www.pinterest.com/dreeamweddingstyle" target="_blank" class="social-link">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dreeamweddingstyle" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dreeamweddingstyle" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:hello@dreeamweddingstyle.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="bg-rose-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-playfair mb-4">💌 Join Our Wedding Club</h3>
+                    <p class="text-gray-600 mb-4">Get exclusive wedding tips, product updates, and special discounts!</p>
+                    <form onsubmit="subscribeNewsletter(event)" class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email" required 
+                               class="flex-1 px-4 py-2 rounded-lg border border-rose-200 focus:outline-none focus:border-rose-400">
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-playfair mb-4">💒 Dreeam Wedding Style</h3>
+                <p class="text-white/80 mb-4">Making wedding dreams come true, one product at a time</p>
+                <p class="text-white/60 text-sm">
+                    © 2024 Dreeam Wedding Style. All rights reserved. | 
+                    This site contains affiliate links to AliExpress products.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample product data
+        const products = [
+            // Bride Essentials
+            {
+                id: 1,
+                title: "Elegant Lace Wedding Dress",
+                price: "$299.99",
+                image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "bride",
+                affiliateUrl: "https://aliexpress.com/elegant-lace-wedding-dress-affiliate-link"
+            },
+            {
+                id: 2,
+                title: "Crystal Bridal Veil",
+                price: "$89.99",
+                image: "https://images.unsplash.com/photo-1529637756578-829e9b7c2d9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "bride",
+                affiliateUrl: "https://aliexpress.com/crystal-bridal-veil-affiliate-link"
+            },
+            {
+                id: 3,
+                title: "Pearl Bridal Jewelry Set",
+                price: "$149.99",
+                image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "bride",
+                affiliateUrl: "https://aliexpress.com/pearl-bridal-jewelry-set-affiliate-link"
+            },
+            // Groom & Party
+            {
+                id: 4,
+                title: "Men's Wedding Suit",
+                price: "$199.99",
+                image: "https://images.unsplash.com/photo-1592878904946-b3cd8ae84d97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "groom",
+                affiliateUrl: "https://aliexpress.com/mens-wedding-suit-affiliate-link"
+            },
+            {
+                id: 5,
+                title: "Bridesmaid Dress Set",
+                price: "$399.99",
+                image: "https://images.unsplash.com/photo-1560258018-c7db7645254e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "groom",
+                affiliateUrl: "https://aliexpress.com/bridesmaid-dress-set-affiliate-link"
+            },
+            // Wedding Decorations
+            {
+                id: 6,
+                title: "Floral Wedding Backdrop",
+                price: "$159.99",
+                image: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "decor",
+                affiliateUrl: "https://aliexpress.com/floral-wedding-backdrop-affiliate-link"
+            },
+            {
+                id: 7,
+                title: "Artificial Rose Flower Wall",
+                price: "$129.99",
+                image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "decor",
+                affiliateUrl: "https://aliexpress.com/artificial-rose-flower-wall-affiliate-link"
+            },
+            {
+                id: 8,
+                title: "Crystal Centerpiece Set",
+                price: "$89.99",
+                image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "decor",
+                affiliateUrl: "https://aliexpress.com/crystal-centerpiece-set-affiliate-link"
+            },
+            // Ceremony & Reception
+            {
+                id: 9,
+                title: "Luxury Guest Book",
+                price: "$49.99",
+                image: "https://images.unsplash.com/photo-1534214526114-0ea4d47b04f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "ceremony",
+                affiliateUrl: "https://aliexpress.com/luxury-guest-book-affiliate-link"
+            },
+            {
+                id: 10,
+                title: "Wedding Ring Pillow",
+                price: "$29.99",
+                image: "https://images.unsplash.com/photo-1565448584051-3f5f9c5b9d6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "ceremony",
+                affiliateUrl: "https://aliexpress.com/wedding-ring-pillow-affiliate-link"
+            },
+            // Wedding Favors
+            {
+                id: 11,
+                title: "Personalized Wedding Favors",
+                price: "$59.99",
+                image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "favors",
+                affiliateUrl: "https://aliexpress.com/personalized-wedding-favors-affiliate-link"
+            },
+            // Photo & Memory
+            {
+                id: 12,
+                title: "Wedding Photo Props Set",
+                price: "$39.99",
+                image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "photo",
+                affiliateUrl: "https://aliexpress.com/wedding-photo-props-set-affiliate-link"
+            }
+        ];
+
+        let currentCategory = 'all';
+        let currentSlide = 0;
+        let productsPerLoad = 8;
+        let currentProductIndex = 0;
+
+        // Initialize the website
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProducts();
+            initializeSlider();
+            initializeScrollAnimations();
+            createFloatingHearts();
+            createParticles();
+            
+            // Add smooth scrolling to all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Create floating hearts effect
+        function createFloatingHearts() {
+            const heartsContainer = document.getElementById('floatingHearts');
+            const hearts = ['💕', '💖', '💗', '💝', '💓', '🌸', '✨'];
+            
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                heartsContainer.appendChild(heart);
+                
+                // Remove heart after animation
+                setTimeout(() => {
+                    heart.remove();
+                }, 8000);
+            }, 2000);
+        }
+
+        // Create particles effect
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Product filtering
+        function filterProducts(category) {
+            currentCategory = category;
+            currentProductIndex = 0;
+            
+            // Update active filter button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Clear and reload products
+            document.getElementById('productGrid').innerHTML = '';
+            loadProducts();
+        }
+
+        // Load products
+        function loadProducts() {
+            const productGrid = document.getElementById('productGrid');
+            const filteredProducts = currentCategory === 'all' 
+                ? products 
+                : products.filter(p => p.category === currentCategory);
+            
+            const productsToLoad = filteredProducts.slice(
+                currentProductIndex, 
+                currentProductIndex + productsPerLoad
+            );
+            
+            productsToLoad.forEach(product => {
+                const productCard = createProductCard(product);
+                productGrid.appendChild(productCard);
+            });
+            
+            currentProductIndex += productsPerLoad;
+            
+            // Check if all products loaded
+            if (currentProductIndex >= filteredProducts.length) {
+                document.querySelector('button[onclick="loadMoreProducts()"').style.display = 'none';
+            } else {
+                document.querySelector('button[onclick="loadMoreProducts()"').style.display = 'block';
+            }
+            
+            // Reinitialize Pinterest buttons
+            if (window.PinUtils) {
+                window.PinUtils.build();
+            }
+        }
+
+        // Load more products
+        function loadMoreProducts() {
+            loadProducts();
+        }
+
+        // Create product card
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card fade-in';
+            
+            card.innerHTML = `
+                <div class="relative group">
+                    <img src="${product.image}" alt="${product.title}" class="product-image">
+                    <div class="pinterest-save">
+                        <a href="https://www.pinterest.com/pin/create/button/" 
+                           data-pin-do="buttonBookmark" 
+                           data-pin-description="${product.title} - ${product.price}"
+                           data-pin-media="${product.image}">
+                            <i class="fab fa-pinterest-p text-rose-400 text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-playfair">${product.title}</h3>
+                    <p class="product-price">${product.price}</p>
+                    <button class="shop-btn" onclick="shopProduct('${product.affiliateUrl}', ${product.id})">
+                        <i class="fas fa-shopping-cart mr-2"></i>Shop on AliExpress
+                    </button>
+                </div>
+            `;
+            
+            // Add hover effect to show Pinterest button
+            const productCard = card.querySelector('.product-card');
+            
+            return card;
+        }
+
+        // Shop product (affiliate link)
+        function shopProduct(url, productId) {
+            // Track click for analytics
+            console.log(`Product clicked: ${productId}`);
+            
+            // Add click animation
+            const button = event.target;
+            button.innerHTML = '<i class="fas fa-check mr-2"></i>Redirecting...';
+            button.style.background = 'linear-gradient(45deg, #10b981, #34d399)';
+            
+            // Open affiliate link in new tab
+            setTimeout(() => {
+                window.open(url, '_blank');
+                button.innerHTML = '<i class="fas fa-shopping-cart mr-2"></i>Shop on AliExpress';
+                button.style.background = 'linear-gradient(45deg, var(--dusty-pink), var(--gold))';
+            }, 500);
+        }
+
+        // Featured slider
+        function initializeSlider() {
+            const slider = document.getElementById('featuredSlider');
+            const totalSlides = slider.children.length;
+            
+            // Auto-slide
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }, 5000);
+        }
+
+        function moveSlider(direction) {
+            const slider = document.getElementById('featuredSlider');
+            const totalSlides = slider.children.length;
+            
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Newsletter subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            // Add success animation
+            const button = event.target.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-heart mr-2"></i>Subscribed!';
+            button.style.background = 'linear-gradient(45deg, #10b981, #34d399)';
+            
+            // Reset button after 2 seconds
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.style.background = 'linear-gradient(45deg, var(--dusty-pink), var(--gold))';
+                event.target.reset();
+            }, 2000);
+            
+            console.log(`Newsletter subscription: ${email}`);
+        }
+
+        // Scroll animations
+        function initializeScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Add product hover effects
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.closest('.product-card')) {
+                const card = e.target.closest('.product-card');
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            }
+        });
+
+        document.addEventListener('mouseout', function(e) {
+            if (e.target.closest('.product-card')) {
+                const card = e.target.closest('.product-card');
+                card.style.transform = 'translateY(0) scale(1)';
+            }
+        });
+
+        // Pinterest hover effect
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.closest('.inspiration-item')) {
+                const pinBtn = e.target.closest('.inspiration-item').querySelector('.pinterest-save');
+                if (pinBtn) {
+                    pinBtn.style.opacity = '1';
+                    pinBtn.style.transform = 'translateY(0)';
+                }
+            }
+        });
+
+        document.addEventListener('mouseout', function(e) {
+            if (e.target.closest('.inspiration-item')) {
+                const pinBtn = e.target.closest('.inspiration-item').querySelector('.pinterest-save');
+                if (pinBtn) {
+                    pinBtn.style.opacity = '0';
+                    pinBtn.style.transform = 'translateY(10px)';
+                }
+            }
+        });
+
+        // Add click tracking for social media links
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const platform = this.querySelector('i').classList.contains('fa-pinterest') ? 'Pinterest' :
+                               this.querySelector('i').classList.contains('fa-instagram') ? 'Instagram' :
+                               this.querySelector('i').classList.contains('fa-facebook') ? 'Facebook' : 'Email';
+                
+                console.log(`Social media click: ${platform}`);
+            });
+        });
+    </script>
+</body>
+</html>
